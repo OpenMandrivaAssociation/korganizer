@@ -69,7 +69,7 @@ import and export of calendar files and more. It is able to work together
 with a wide variety of groupware servers, for example Kolab, Open-Xchange,
 Citadel or OpenGroupware.org.
 
-%files
+%files -f all.lang
 %{_kde5_applicationsdir}/korganizer-import.desktop
 %{_kde5_applicationsdir}/org.kde.korganizer.desktop
 %{_kde5_autostart}/org.kde.korgac.desktop
@@ -180,3 +180,7 @@ KDE PIM shared library.
 rm -rf %{buildroot}%{_kde5_libdir}/libkorganizer_core.so
 rm -rf %{buildroot}%{_kde5_libdir}/libkorganizer_interfaces.so
 
+%find_lang %{name}
+%find_lang korgac
+
+cat *.lang >all.lang
