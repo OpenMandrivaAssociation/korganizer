@@ -1,12 +1,13 @@
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		korganizer-17.11.90-qt-5.10.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5DBus)
 BuildRequires:	pkgconfig(Qt5Gui)
@@ -74,7 +75,6 @@ Citadel or OpenGroupware.org.
 %{_kde5_applicationsdir}/korganizer-import.desktop
 %{_kde5_applicationsdir}/org.kde.korganizer.desktop
 %{_kde5_autostart}/org.kde.korgac.desktop
-%{_bindir}/ical2vcal
 %{_bindir}/korgac
 %{_bindir}/korganizer
 %{_datadir}/config.kcfg/korganizer.kcfg
@@ -106,7 +106,6 @@ Citadel or OpenGroupware.org.
 %{_sysconfdir}/xdg/korganizer.categories
 %{_sysconfdir}/xdg/korganizer.renamecategories
 %{_sysconfdir}/xdg/korganizer.knsrc
-%{_kde5_xmlguidir}/korganizer/*.rc
 %{_datadir}/metainfo/org.kde.korganizer.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.KOrgac.xml
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.Korganizer.xml
@@ -170,6 +169,7 @@ KDE PIM shared library.
 
 %prep
 %setup -q
+%apply_patches
 %cmake_kde5
 
 %build
