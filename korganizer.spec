@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	19.04.1
+Version:	19.04.2
 Release:	1
 Epoch:		3
 License:	GPLv2+
