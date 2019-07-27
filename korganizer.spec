@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -105,9 +105,9 @@ Citadel or OpenGroupware.org.
 %{_kde5_services}/korganizer_*.desktop
 %{_kde5_services}/webcal.protocol
 %{_kde5_servicetypes}/dbuscalendar.desktop
-%{_sysconfdir}/xdg/korganizer.categories
-%{_sysconfdir}/xdg/korganizer.renamecategories
-%{_sysconfdir}/xdg/korganizer.knsrc
+%{_datadir}/qlogging-categories5/korganizer.categories
+%{_datadir}/qlogging-categories5/korganizer.renamecategories
+%{_datadir}/knsrcfiles/korganizer.knsrc
 %{_datadir}/metainfo/org.kde.korganizer.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.KOrgac.xml
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.Korganizer.xml
