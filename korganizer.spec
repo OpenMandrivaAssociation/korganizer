@@ -188,6 +188,3 @@ rm -rf %{buildroot}%{_kde5_libdir}/libkorganizer_interfaces.so
 %find_lang korgac
 
 cat *.lang >all.lang
-
-# FIXME workaround for gdb 8.3.1 hang
-strip --strip-unneeded %{buildroot}%{_bindir}/*
