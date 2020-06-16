@@ -3,7 +3,7 @@
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
 Version:	20.04.2
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -57,6 +57,7 @@ BuildRequires:	cmake(KF5LibkdepimAkonadi)
 BuildRequires:	cmake(KF5IncidenceEditor)
 BuildRequires:	cmake(KF5CalendarSupport)
 BuildRequires:	cmake(KF5EventViews)
+BuildRequires:	cmake(KUserFeedback)
 BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(x11)
