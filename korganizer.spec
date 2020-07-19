@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	20.04.3
+Version:	20.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -51,13 +51,12 @@ BuildRequires:	cmake(Phonon4Qt5)
 BuildRequires:	cmake(KF5KontactInterface)
 BuildRequires:	cmake(KF5Mime)
 BuildRequires:	cmake(KF5AkonadiNotes)
-BuildRequires:	cmake(KF5KdepimDBusInterfaces)
 BuildRequires:	cmake(KF5PimCommonAkonadi)
-BuildRequires:	cmake(KF5LibkdepimAkonadi)
 BuildRequires:	cmake(KF5IncidenceEditor)
 BuildRequires:	cmake(KF5CalendarSupport)
 BuildRequires:	cmake(KF5EventViews)
 BuildRequires:	cmake(KUserFeedback)
+BuildRequires:	cmake(KF5Libkdepim)
 BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(x11)
@@ -118,11 +117,13 @@ Citadel or OpenGroupware.org.
 %{_qt5_plugindir}/kcm_korganizer.so
 %{_qt5_plugindir}/kcm_sdsummary.so
 %{_qt5_plugindir}/kcm_todosummary.so
-%{_qt5_plugindir}/kontact_journalplugin.so
-%{_qt5_plugindir}/kontact_korganizerplugin.so
-%{_qt5_plugindir}/kontact_specialdatesplugin.so
-%{_qt5_plugindir}/kontact_todoplugin.so
+%{_qt5_plugindir}/kontact5/kontact_journalplugin.so
+%{_qt5_plugindir}/kontact5/kontact_korganizerplugin.so
+%{_qt5_plugindir}/kontact5/kontact_specialdatesplugin.so
+%{_qt5_plugindir}/kontact5/kontact_todoplugin.so
 %{_qt5_plugindir}/korganizerpart.so
+%{_datadir}/applications/korganizer-view.desktop
+%{_datadir}/dbus-1/services/org.kde.korgac.service
 
 #----------------------------------------------------------------------------
 
