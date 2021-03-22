@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -92,9 +92,6 @@ Citadel or OpenGroupware.org.
 %{_iconsdir}/hicolor/*/apps/korg-journal.*
 %{_iconsdir}/hicolor/*/apps/korg-todo.*
 %{_iconsdir}/hicolor/*/apps/quickview.*
-%{_iconsdir}/oxygen/*/actions/checkmark.*
-%{_iconsdir}/oxygen/*/actions/smallclock.*
-%{_iconsdir}/oxygen/*/actions/upindicator.*
 %{_kde5_services}/kcmapptsummary.desktop
 %{_kde5_services}/kcmsdsummary.desktop
 %{_kde5_services}/kcmtodosummary.desktop
