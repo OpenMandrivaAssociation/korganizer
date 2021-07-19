@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	21.04.2
+Version:	21.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -83,8 +83,6 @@ Citadel or OpenGroupware.org.
 %{_datadir}/kconf_update/korganizer*
 %{_datadir}/kontact/ksettingsdialog/korganizer.setdlg
 %{_datadir}/kontact/ksettingsdialog/specialdates.setdlg
-%dir %{_datadir}/korgac/
-%{_datadir}/korgac/*
 %dir %{_datadir}/korganizer/
 %{_datadir}/korganizer/*
 %{_docdir}/*/*/korganizer
@@ -92,6 +90,7 @@ Citadel or OpenGroupware.org.
 %{_iconsdir}/hicolor/*/apps/korg-journal.*
 %{_iconsdir}/hicolor/*/apps/korg-todo.*
 %{_iconsdir}/hicolor/*/apps/quickview.*
+%{_iconsdir}/hicolor/*/apps/korgac.*
 %{_kde5_services}/kcmapptsummary.desktop
 %{_kde5_services}/kcmsdsummary.desktop
 %{_kde5_services}/kcmtodosummary.desktop
@@ -100,7 +99,6 @@ Citadel or OpenGroupware.org.
 %{_kde5_services}/kontact/specialdatesplugin.desktop
 %{_kde5_services}/kontact/todoplugin.desktop
 %{_kde5_services}/korganizer_*.desktop
-%{_kde5_services}/webcal.protocol
 %{_datadir}/dbus-1/services/org.kde.korganizer.service
 %{_datadir}/kservicetypes5/korganizerpart.desktop
 %{_datadir}/qlogging-categories5/korganizer.categories
@@ -110,10 +108,18 @@ Citadel or OpenGroupware.org.
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.KOrgac.xml
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.Korganizer.xml
 %{_datadir}/dbus-1/interfaces/org.kde.Korganizer.Calendar.xml
-%{_qt5_plugindir}/kcm_apptsummary.so
-%{_qt5_plugindir}/kcm_korganizer.so
-%{_qt5_plugindir}/kcm_sdsummary.so
-%{_qt5_plugindir}/kcm_todosummary.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configcolorsandfonts.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configdesignerfields.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configfreebusy.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configgroupscheduling.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configmain.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configplugins.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configtime.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configviews.so
+%{_qt5_plugindir}/pim/kcms/korganizer/korganizer_userfeedback.so
+%{_qt5_plugindir}/pim/kcms/summary/kcmapptsummary.so
+%{_qt5_plugindir}/pim/kcms/summary/kcmsdsummary.so
+%{_qt5_plugindir}/pim/kcms/summary/kcmtodosummary.so
 %{_qt5_plugindir}/kontact5/kontact_journalplugin.so
 %{_qt5_plugindir}/kontact5/kontact_korganizerplugin.so
 %{_qt5_plugindir}/kontact5/kontact_specialdatesplugin.so
