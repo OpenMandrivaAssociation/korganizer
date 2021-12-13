@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -81,8 +81,6 @@ Citadel or OpenGroupware.org.
 %{_bindir}/korganizer
 %{_datadir}/config.kcfg/korganizer.kcfg
 %{_datadir}/kconf_update/korganizer*
-%{_datadir}/kontact/ksettingsdialog/korganizer.setdlg
-%{_datadir}/kontact/ksettingsdialog/specialdates.setdlg
 %dir %{_datadir}/korganizer/
 %{_datadir}/korganizer/*
 %{_docdir}/*/*/korganizer
