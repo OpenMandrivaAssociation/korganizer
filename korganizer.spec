@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	21.12.2
+Version:	22.03.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -76,11 +76,8 @@ Citadel or OpenGroupware.org.
 %files -f all.lang
 %{_kde5_applicationsdir}/korganizer-import.desktop
 %{_kde5_applicationsdir}/org.kde.korganizer.desktop
-%{_kde5_autostart}/org.kde.korgac.desktop
-%{_bindir}/korgac
 %{_bindir}/korganizer
 %{_datadir}/config.kcfg/korganizer.kcfg
-%{_datadir}/kconf_update/korganizer*
 %dir %{_datadir}/korganizer/
 %{_datadir}/korganizer/*
 %{_docdir}/*/*/korganizer
@@ -88,22 +85,12 @@ Citadel or OpenGroupware.org.
 %{_iconsdir}/hicolor/*/apps/korg-journal.*
 %{_iconsdir}/hicolor/*/apps/korg-todo.*
 %{_iconsdir}/hicolor/*/apps/quickview.*
-%{_iconsdir}/hicolor/*/apps/korgac.*
-%{_kde5_services}/kcmapptsummary.desktop
-%{_kde5_services}/kcmsdsummary.desktop
-%{_kde5_services}/kcmtodosummary.desktop
-%{_kde5_services}/kontact/journalplugin.desktop
-%{_kde5_services}/kontact/korganizerplugin.desktop
-%{_kde5_services}/kontact/specialdatesplugin.desktop
-%{_kde5_services}/kontact/todoplugin.desktop
-%{_kde5_services}/korganizer_*.desktop
 %{_datadir}/dbus-1/services/org.kde.korganizer.service
 %{_datadir}/kservicetypes5/korganizerpart.desktop
 %{_datadir}/qlogging-categories5/korganizer.categories
 %{_datadir}/qlogging-categories5/korganizer.renamecategories
 %{_datadir}/knsrcfiles/korganizer.knsrc
 %{_datadir}/metainfo/org.kde.korganizer.appdata.xml
-%{_datadir}/dbus-1/interfaces/org.kde.korganizer.KOrgac.xml
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.Korganizer.xml
 %{_datadir}/dbus-1/interfaces/org.kde.Korganizer.Calendar.xml
 %{_qt5_plugindir}/pim/kcms/korganizer/korganizer_configcolorsandfonts.so
@@ -124,7 +111,6 @@ Citadel or OpenGroupware.org.
 %{_qt5_plugindir}/kontact5/kontact_todoplugin.so
 %{_qt5_plugindir}/korganizerpart.so
 %{_datadir}/applications/korganizer-view.desktop
-%{_datadir}/dbus-1/services/org.kde.korgac.service
 
 #----------------------------------------------------------------------------
 
@@ -187,6 +173,5 @@ rm -rf %{buildroot}%{_kde5_libdir}/libkorganizer_core.so
 rm -rf %{buildroot}%{_kde5_libdir}/libkorganizer_interfaces.so
 
 %find_lang %{name}
-%find_lang korgac
 
 cat *.lang >all.lang
