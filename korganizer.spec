@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	22.08.3
+Version:	22.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -86,7 +86,6 @@ Citadel or OpenGroupware.org.
 %{_iconsdir}/hicolor/*/apps/korg-todo.*
 %{_iconsdir}/hicolor/*/apps/quickview.*
 %{_datadir}/dbus-1/services/org.kde.korganizer.service
-%{_datadir}/kservicetypes5/korganizerpart.desktop
 %{_datadir}/qlogging-categories5/korganizer.categories
 %{_datadir}/qlogging-categories5/korganizer.renamecategories
 %{_datadir}/knsrcfiles/korganizer.knsrc
