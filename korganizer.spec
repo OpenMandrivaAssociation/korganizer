@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	22.12.1
+Version:	22.12.2
 Release:	1
 Epoch:		3
 License:	GPLv2+
