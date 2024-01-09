@@ -65,10 +65,9 @@ BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
-Requires:	akonadi-calendar-tools
-Requires:	kdepim-runtime
-Suggests:	kdepim-addons
-Conflicts:	kontact < 3:17.04.0
+Requires:	plasma6-akonadi-calendar-tools
+Requires:	plasma6-kdepim-runtime
+Suggests:	plasma6-kdepim-addons
 
 %description
 KOrganizer provides management of events and tasks, alarm notification,
