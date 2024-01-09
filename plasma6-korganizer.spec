@@ -59,6 +59,7 @@ BuildRequires:	cmake(KPim6IncidenceEditor)
 BuildRequires:	cmake(KPim6CalendarSupport)
 BuildRequires:	cmake(KPim6EventViews)
 BuildRequires:	cmake(KF6UserFeedback)
+BuildRequires:	%mklibname -d KF6UserFeedbackWidgets
 BuildRequires:	cmake(KPim6Libkdepim)
 BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
