@@ -10,11 +10,12 @@ Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/korganizer-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
-BuildRequires:	pkgconfig(Qt6DBus)
-BuildRequires:	pkgconfig(Qt6Gui)
-BuildRequires:	pkgconfig(Qt6Widgets)
-BuildRequires:	pkgconfig(Qt6Test)
-BuildRequires:	pkgconfig(Qt6UiTools)
+BuildRequires:	cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Gui)
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(Qt6Test)
+BuildRequires:	cmake(Qt6UiTools)
+BuildRequires:	cmake(Qt6UiPlugin)
 BuildRequires:	cmake(KPim6AkonadiSearch)
 BuildRequires:	cmake(KPim6AkonadiContactCore)
 BuildRequires:	cmake(KF6Codecs)
