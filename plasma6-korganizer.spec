@@ -2,7 +2,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		plasma6-korganizer
-Version:	24.01.90
+Version:	24.01.95
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
