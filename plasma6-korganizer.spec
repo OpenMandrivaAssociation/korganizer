@@ -5,7 +5,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		plasma6-korganizer
-Version:	24.02.2
+Version:	24.05.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -102,7 +102,6 @@ Citadel or OpenGroupware.org.
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.Korganizer.xml
 %{_datadir}/dbus-1/interfaces/org.kde.Korganizer.Calendar.xml
 %{_qtdir}/plugins/pim6/kcms/korganizer/korganizer_configcolorsandfonts.so
-%{_qtdir}/plugins/pim6/kcms/korganizer/korganizer_configdesignerfields.so
 %{_qtdir}/plugins/pim6/kcms/korganizer/korganizer_configfreebusy.so
 %{_qtdir}/plugins/pim6/kcms/korganizer/korganizer_configgroupscheduling.so
 %{_qtdir}/plugins/pim6/kcms/korganizer/korganizer_configmain.so
