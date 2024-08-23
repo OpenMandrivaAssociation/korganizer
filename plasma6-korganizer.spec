@@ -5,7 +5,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		plasma6-korganizer
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -121,6 +121,14 @@ Citadel or OpenGroupware.org.
 %{_libdir}/libkorganizer_core.so*
 %{_libdir}/libkorganizer_interfaces.so*
 %{_libdir}/libkorganizerprivate.so*
+%{_qtdir}/plugins/pim6/korganizer/datenums.so
+%{_qtdir}/plugins/pim6/korganizer/lunarphases.so
+%{_qtdir}/plugins/pim6/korganizer/picoftheday.so
+%{_qtdir}/plugins/pim6/korganizer/thisdayinhistory.so
+%{_datadir}/icons/hicolor/scalable/status/moon-phase-first-quarter.svg
+%{_datadir}/icons/hicolor/scalable/status/moon-phase-full.svg
+%{_datadir}/icons/hicolor/scalable/status/moon-phase-last-quarter.svg
+%{_datadir}/icons/hicolor/scalable/status/moon-phase-new.svg
 
 #----------------------------------------------------------------------
 
