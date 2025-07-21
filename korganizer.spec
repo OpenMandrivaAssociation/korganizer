@@ -5,7 +5,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -71,9 +71,14 @@ BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
-Requires:	plasma6-akonadi-calendar-tools
-Requires:	plasma6-kdepim-runtime
-Suggests:	plasma6-kdepim-addons
+Requires:	akonadi-calendar-tools >= 6.0
+Requires:	kdepim-runtime >= 6.0
+Suggests:	kdepim-addons >= 6.0
+
+%rename plasma6-korganizer
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 KOrganizer provides management of events and tasks, alarm notification,
@@ -82,14 +87,13 @@ import and export of calendar files and more. It is able to work together
 with a wide variety of groupware servers, for example Kolab, Open-Xchange,
 Citadel or OpenGroupware.org.
 
-%files -f all.lang
+%files -f %{name}.lang
 %{_datadir}/applications/korganizer-import.desktop
 %{_datadir}/applications/org.kde.korganizer.desktop
 %{_bindir}/korganizer
 %{_datadir}/config.kcfg/korganizer.kcfg
 %dir %{_datadir}/korganizer/
 %{_datadir}/korganizer/*
-%{_docdir}/*/*/korganizer
 %{_iconsdir}/hicolor/*/apps/korganizer.*
 %{_iconsdir}/hicolor/*/apps/korg-journal.*
 %{_iconsdir}/hicolor/*/apps/korg-todo.*
@@ -129,19 +133,3 @@ Citadel or OpenGroupware.org.
 %{_datadir}/icons/hicolor/scalable/status/moon-phase-full.svg
 %{_datadir}/icons/hicolor/scalable/status/moon-phase-last-quarter.svg
 %{_datadir}/icons/hicolor/scalable/status/moon-phase-new.svg
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n korganizer-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-
-%find_lang all --all-name
