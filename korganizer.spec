@@ -5,7 +5,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	25.04.3
+Version:	25.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -101,7 +101,6 @@ Citadel or OpenGroupware.org.
 %{_datadir}/dbus-1/services/org.kde.korganizer.service
 %{_datadir}/qlogging-categories6/korganizer.categories
 %{_datadir}/qlogging-categories6/korganizer.renamecategories
-%{_datadir}/knsrcfiles/korganizer.knsrc
 %{_datadir}/metainfo/org.kde.korganizer.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.korganizer.Korganizer.xml
 %{_datadir}/dbus-1/interfaces/org.kde.Korganizer.Calendar.xml
