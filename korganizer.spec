@@ -5,7 +5,7 @@
 
 Summary:	KDE calendar and scheduling component
 Name:		korganizer
-Version:	26.04.3
+Version:	26.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -59,7 +59,7 @@ BuildRequires:	cmake(KPim6LdapWidgets)
 BuildRequires:	cmake(KPim6AkonadiCalendar)
 BuildRequires:	cmake(Phonon4Qt6)
 BuildRequires:	cmake(KPim6KontactInterface)
-BuildRequires:	cmake(KPim6Mime)
+BuildRequires:	cmake(KF6Mime)
 BuildRequires:	cmake(KPim6PimCommonAkonadi)
 BuildRequires:	cmake(KPim6IncidenceEditor)
 BuildRequires:	cmake(KPim6CalendarSupport)
@@ -78,6 +78,7 @@ Suggests:	kdepim-addons >= 6.0
 %rename plasma6-korganizer
 
 BuildSystem:	cmake
+BuildOption:	-DBUILD_PYTHON_BINDINGS:BOOL=OFF
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
@@ -128,7 +129,4 @@ Citadel or OpenGroupware.org.
 %{_qtdir}/plugins/pim6/korganizer/lunarphases.so
 %{_qtdir}/plugins/pim6/korganizer/picoftheday.so
 %{_qtdir}/plugins/pim6/korganizer/thisdayinhistory.so
-%{_datadir}/icons/hicolor/scalable/status/moon-phase-first-quarter.svg
-%{_datadir}/icons/hicolor/scalable/status/moon-phase-full.svg
-%{_datadir}/icons/hicolor/scalable/status/moon-phase-last-quarter.svg
-%{_datadir}/icons/hicolor/scalable/status/moon-phase-new.svg
+%{_iconsdir}/hicolor/*/apps/realmoon-*.png
